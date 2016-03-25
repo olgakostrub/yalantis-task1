@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ognatenko.yalantistask1.MainActivity">
+
+    <LinearLayout
+        style="@style/LinearLayout"
+        android:orientation="vertical">
+        <LinearLayout style="@style/LinearLayout">
+            <TextView
+                style="@style/BasicTextView.Category"
+                android:layout_gravity="center_vertical"
+                android:text="@string/category" />
+            <TextView
+                style="@style/BasicTextView.Status"
+                android:layout_gravity="center_vertical"
+                android:paddingBottom="@dimen/status_vertical_padding"
+                android:paddingLeft="@dimen/status_horizontal_padding"
+                android:paddingRight="@dimen/status_horizontal_padding"
+                android:paddingTop="@dimen/status_vertical_padding"
+                android:text="@string/status" />
+
+        </LinearLayout>
+        <include layout="@layout/divider" />
+        <LinearLayout style="@style/LinearLayout">
+            <TextView
+                style="@style/BasicTextView.LeftTextView"
+                android:text="@string/label_created" />
+            <TextView
+                style="@style/BasicTextView"
+                android:gravity="end"
+                android:text="@string/date_created" />
+
+        </LinearLayout>
+
+        <include layout="@layout/divider" />
+
+        <LinearLayout style="@style/LinearLayout">
+
+            <TextView
+                style="@style/BasicTextView.LeftTextView"
+                android:text="@string/label_registered" />
+
+            <TextView
+                style="@style/BasicTextView"
+                android:gravity="end"
+                android:text="@string/date_registered" />
+
+        </LinearLayout>
+
+        <include layout="@layout/divider" />
+
+        <LinearLayout style="@style/LinearLayout">
+
+            <TextView
+                style="@style/BasicTextView.LeftTextView"
+                android:text="@string/label_resolve" />
+
+            <TextView
+                style="@style/BasicTextView"
+                android:gravity="end"
+                android:text="@string/date_resolve" />
+        </LinearLayout>
+
+        <include layout="@layout/divider" />
+
+        <LinearLayout style="@style/LinearLayout">
+
+            <TextView
+                style="@style/BasicTextView.LeftTextView"
+                android:text="@string/label_responsible" />
+
+            <TextView
+                style="@style/BasicTextView"
+                android:gravity="end"
+                android:text="@string/org_responsible" />
+
+        </LinearLayout>
+
+        <include layout="@layout/divider" />
+
+        <TextView
+            style="@style/BasicTextView"
+            android:text="@string/description" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_image_list"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/recycler_height"
+            android:layout_marginTop="@dimen/recycler_margin" />
+
+    </LinearLayout>
+
+</ScrollView>
