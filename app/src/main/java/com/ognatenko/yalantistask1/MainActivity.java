@@ -8,6 +8,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+//[Comment] No recycler view on screen
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -25,11 +26,11 @@ public class MainActivity extends AppCompatActivity {
     private void setHeader() {
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setTitle("CE-1252718");
+            getSupportActionBar().setTitle("CE-1252718"); //[Comment] Hardcode
         }
     }
 
-    private void setRecyclerView() {
+    private void setRecyclerView() { //[Comment] Strange. Why are you not using this method?
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_image_list);
         recyclerView.addItemDecoration(new CustomItemDecoration((int) getResources().getDimension(R.dimen.recycler_margin)));
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);

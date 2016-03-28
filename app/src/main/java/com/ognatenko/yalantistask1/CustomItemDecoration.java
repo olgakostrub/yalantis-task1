@@ -8,7 +8,7 @@ import android.graphics.Rect;
  * Created by Irony on 03/25/16.
  */
 public class CustomItemDecoration extends RecyclerView.ItemDecoration {
-    private final int mHorizSpaceSize;
+    private final int mHorizSpaceSize; //[Comment] I guess it should be mHorizontalSpaceSize
 
     public CustomItemDecoration(int size) {
         mHorizSpaceSize = size;
