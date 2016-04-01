@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private void setHeader() {
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setTitle("CE-1252718");
+            getSupportActionBar().setTitle(getString(R.string.code));
         }
     }
 

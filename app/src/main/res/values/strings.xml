@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">YalantisTask1</string>
+    <string name="app_name">gnatenko_olga_task1</string>
 
     <string name="category">Communal services</string>
     <string name="status">In Progress</string>
-    <string name="label_created">Created At</string>
+    <string name="label_created">Created at</string>
     <string name="date_created">Feb 25, 2016</string>
     <string name="label_registered">Registered</string>
     <string name="date_registered">Feb 26, 2016</string>
@@ -18,5 +18,7 @@
         <item>http://dailykitten.com/wp-content/uploads/2016/03/Autumn-32016-400x320.jpg</item>
         <item>http://dailykitten.com/wp-content/uploads/2016/03/20160318_080638-400x320.jpg</item>
         <item>http://dailykitten.com/wp-content/uploads/2016/03/image2-400x320.jpeg</item>
+        <item>http://dailykitten.com/wp-content/uploads/2016/03/20160108_2050151-400x320.jpg</item>
+        <item>http://dailykitten.com/wp-content/uploads/2016/03/1447880799856-400x320.jpg</item>
     </string-array>
 </resources>
